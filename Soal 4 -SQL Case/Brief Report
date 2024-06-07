@@ -1,0 +1,22 @@
+The dataset from "data-to-insights.ecommerce.all_sessions" represents e-commerce session data, capturing various aspects of user interactions with the website. this dataset also have a several issues. 
+
+## DATA QUALITY ISSUES
+1. Inconsistent Data Types: Some fields like timeOnSite have non-numeric values, which could lead to data loading issues.
+2. Missing Values: There may be missing values in some columns, which need to be handled appropriately.
+3. Duplicate Rows: Potential duplicate rows could skew the analysis.
+4. Currency Formatting: Ensure productRevenue and productRefundAmount are in a consistent numeric format.
+
+## INSIGHT
+1. Users spending more time but viewing fewer pages could indicate deeper engagement with fewer content pieces or difficulty navigating the site.
+2. Highlights products with high refund rates, which could indicate issues with product quality or customer satisfaction.
+3. The top channels and countries contributing the most revenue can be identified that can help to determain which marketing region that profitable.
+
+#COMMENTS
+1. Imported the CSV data into MySQL, ensuring the table schema matched the CSV structure.
+2. Handled data type issues, particularly converting timeOnSite to a VARCHAR to accommodate non-numeric values.
+3. Cleaned the data by ensuring consistent data types and handling missing values.
+4. Preprocessed data to remove duplicates and ensure integrity.
+5. Used SQL queries to derive insights, leveraging aggregation functions and conditional logic.
+6. Structured queries clearly and validated results to ensure accuracy.
+7. Assumed timeOnSite values should be converted to strings due to mixed data types.
+8. Assumed productRevenue and productRefundAmount are in the same currency and do not require further conversion.
